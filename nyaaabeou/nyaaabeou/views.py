@@ -1,7 +1,7 @@
 """
 Routes and views for the flask application.
 """
-
+# coding :utf-8
 from datetime import datetime
 from flask import render_template,Flask
 from nyaaabeou import app
@@ -12,7 +12,7 @@ def home():
     """Renders the home page."""
     return render_template(
         'index.html',
-        title='Home Page'
+        title = 'home'
     )
 
 @app.route('/contact')
@@ -20,8 +20,7 @@ def contact():
     """Renders the contact page."""
     return render_template(
         'contact.html',
-        title='Contact',
-        message='Your contact page.'
+        title = 'contact'
     )
 
 @app.route('/about')
@@ -29,5 +28,5 @@ def about():
     """Renders the about page."""
     return render_template(
         'about.html',
-        title='About'
+        title = 'about'
     )
