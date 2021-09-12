@@ -32,7 +32,7 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="runserver.py">
-      <Publish>False</Publish>
+      <Publish>True</Publish>
     </Compile>
     <Compile Include="nyaaabeou\__init__.py" />
     <Compile Include="nyaaabeou\views.py" />
@@ -45,13 +45,14 @@
     <Folder Include="nyaaabeou\static\scripts\" />
     <Folder Include="nyaaabeou\templates\" />
     <Folder Include="nyaaabeou\templates\blog\" />
+    <Folder Include="nyaaabeou\templates\auth\" />
     <Folder Include="Properties\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\nyaaabeou - Web Deploy.pubxml" />
     <Content Include="nyaaabeou\templates\blog\blog.html" />
-    <Content Include="nyaaabeou\templates\login.html" />
+    <Content Include="nyaaabeou\templates\auth\login.html" />
     <Content Include="requirements.txt" />
     <Content Include="nyaaabeou\static\content\bootstrap.css" />
     <Content Include="nyaaabeou\static\content\bootstrap.min.css" />

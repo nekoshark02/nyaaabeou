@@ -1,4 +1,4 @@
-from nyaaabeou import app
+from nyaaabeou import app 
 
 import functools
 import os
@@ -53,12 +53,10 @@ def login():
         if User.query.filter_by(username=form.username.data, password=form.password.data).one_or_none():
             user = User.query.filter_by(username=form.username.data).one_or_none()
             login_user(user)
-            return redirect('/blog/blog.html')
-        else:
-            return 'Missed'
+            return redirect('auth/login.html')
 
     return render_template(
-        'login.html',
+        'auth/login.html',
         title='Login',
         form = form
         )
