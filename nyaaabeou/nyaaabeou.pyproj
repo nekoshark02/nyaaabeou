@@ -28,7 +28,12 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="runserver.py" />
+    <Compile Include="nyaaabeou\db.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py">
+      <Publish>False</Publish>
+    </Compile>
     <Compile Include="nyaaabeou\__init__.py" />
     <Compile Include="nyaaabeou\views.py" />
   </ItemGroup>
@@ -39,11 +44,14 @@
     <Folder Include="nyaaabeou\static\fonts\" />
     <Folder Include="nyaaabeou\static\scripts\" />
     <Folder Include="nyaaabeou\templates\" />
+    <Folder Include="nyaaabeou\templates\blog\" />
     <Folder Include="Properties\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\PublishProfiles\nyaaabeou - Web Deploy.pubxml" />
+    <Content Include="nyaaabeou\templates\blog\blog.html" />
+    <Content Include="nyaaabeou\templates\login.html" />
     <Content Include="requirements.txt" />
     <Content Include="nyaaabeou\static\content\bootstrap.css" />
     <Content Include="nyaaabeou\static\content\bootstrap.min.css" />

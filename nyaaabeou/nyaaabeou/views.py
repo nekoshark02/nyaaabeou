@@ -2,7 +2,6 @@
 Routes and views for the flask application.
 """
 # coding :utf-8
-from datetime import datetime
 from flask import render_template,Flask
 from nyaaabeou import app
 
