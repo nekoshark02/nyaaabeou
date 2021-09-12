@@ -6,13 +6,13 @@
 
 <form method="POST" action="{{ url_for('login')}}">
     {{ form.csrf_token }}
-    {{ form.username.label }}{{ form.username(placeholder = "essential", size =20) }}
+    {{ form.username.label }}:{{ form.username(placeholder = "essential", size =20) }}
     <div>
         {% for error in form.username.errors %}
         <span style="color: red;">{{ error }}</span>
         {% endfor %}<br />
     </div>
-    {{ form.password.label }}{{ form.password(placeholder = "essential", size =20) }}
+    {{ form.password.label }}:{{ form.password(placeholder = "essential", size =20) }}
     <div>
         {% for error in form.password.errors %}
         <span style="color: red;">{{ error }}</span>

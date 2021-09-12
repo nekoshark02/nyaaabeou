@@ -35,7 +35,6 @@ class LoginForm(FlaskForm):
         ])
     password = PasswordField('password', validators = [
         validators.DataRequired(message = 'must input'),
-        validators.AnyOf(values = ['password'], message = 'missed'),
         validators.EqualTo('password',message = 'Password must match.')
         ])
     submit = SubmitField('login')
@@ -53,7 +52,7 @@ def login():
         if User.query.filter_by(username=form.username.data, password=form.password.data).one_or_none():
             user = User.query.filter_by(username=form.username.data).one_or_none()
             login_user(user)
-            return redirect('auth/login.html')
+            return redirect('blog/blog.html')
 
     return render_template(
         'auth/login.html',
