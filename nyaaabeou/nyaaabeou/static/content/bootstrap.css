@@ -315,7 +315,7 @@ body {
   font-size: 14px;
   line-height: 1.428571429;
   color: #333333;
-  background-color: #ffffff;
+  background-color: #f7f7f7;
 }
 
 input,
@@ -3244,7 +3244,7 @@ input[type="button"].btn-block {
   margin: 2px 0 0;
   font-size: 14px;
   list-style: none;
-  background-color: #ffffff;
+  background-color: #b0e0e6;
   border: 1px solid #cccccc;
   border: 1px solid rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -4475,7 +4475,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
   }
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
-    color: #333333;
+    color: #b0c4de;
     background-color: transparent;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
@@ -4497,12 +4497,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-default .navbar-link:hover {
-  color: #333333;
+  color: #f7f7f7;
 }
 
 .navbar-inverse {
-  background-color: #222222;
-  border-color: #080808;
+  background-color: #f7f7f7;
+  border-color: #f7f7f7;
 }
 
 .navbar-inverse .navbar-brand {
@@ -4544,12 +4544,12 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse .navbar-toggle {
-  border-color: #333333;
+  border-color: #b0c4de;
 }
 
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #333333;
+  background-color: #b0c4de;
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
@@ -4930,21 +4930,55 @@ a.list-group-item.active > .badge,
 .jumbotron {
     padding: 30px;
     margin-bottom: 30px;
-    font-size: 21px;
-    font-weight: 200;
+    font-size: 50px;
+    font-weight: 300;
     line-height: 2.1428571435;
     color: inherit;
-    background-color: #ffffff;
+    background-color: #ddf4f1;
+    border-radius: 30px;
 }
 
 .jumbotron h1 {
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   line-height: 1;
-  color: inherit;
+  color: #ffffff;
+  text-shadow:2px 0 0 #b0e6de, 0 2px 0 #b0e6de,-2px 0 0 #b0e6de,0 -2px 0 #b0e6df,7px 7px 0 #b0e6de;
   text-align: center;
 }
 
 .jumbotron p {
   line-height: 1.4;
+}
+.images{
+    text-align:center;
+}
+
+.img-nabeou {
+    margin: 15px 50px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-spacing:5px;
+    border: 4px solid #b0e6cb;
+}
+.img-neko02 {
+    margin: 15px 50px;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 4px solid #b0e6cb;
+}
+
+.introintro h2 {
+    border: solid 3px #b0e0e6;
+    padding: 0.5em;
+    border-radius: 0.5em;
+}
+.introducebox {
+    background-color: #f1faf9;
+    margin: 10px;
 }
 
 .container .jumbotron {
@@ -4964,6 +4998,31 @@ a.list-group-item.active > .badge,
     font-size: 63px;
   }
 }
+
+.skillpassage h2 {
+    position: relative;
+    padding-left: 25px;
+}
+
+    .skillpassage h2:before {
+        position: absolute;
+        content: '';
+        bottom: -3px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: none;
+        border-left: solid 15px transparent;
+        border-bottom: solid 15px #b0e0e6;
+    }
+    .skillpassage h2:after {
+        position: absolute;
+        content: '';
+        bottom: -3px;
+        left: 10px;
+        width: 100%;
+        border-bottom: solid 3px #b0e0e6;
+    }
 
 .thumbnail {
   display: inline-block;

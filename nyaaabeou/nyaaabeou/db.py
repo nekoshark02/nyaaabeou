@@ -27,7 +27,19 @@ class User(UserMixin, db.Model):
         self.username = username
         self.password = password
 
+class Post(db.Model):
+    __tablename__ = 'Post'
+    id = db.Column(db.Integer, primary_key = True)
+    title = db.Column(db.Text())
+    body = db.Column(db.Text())
+    def __init__(self,title,body):
+        self.title = title
+        self.body = body
+
+
 db.create_all()
+
+
 class LoginForm(FlaskForm):
     username = StringField('username',validators=[
         validators.DataRequired(message = 'must input'),
@@ -58,4 +70,10 @@ def login():
         'auth/login.html',
         title='Login',
         form = form
+        )
+@app.route('/edit', methods=['GET','POST'])
+@login_required
+def edit():
+    return render_template(
+        'blog/blog.html'
         )
